@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>English Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .scroll-container {
+            height: auto; 
+            overflow: auto;
+        }
+    </style>
+</head>
+<body class="scroll-container">
+    <h4>Grand Total Lines: 1108</h4>
+    <h4>Index</h4>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;title&gt;English Project&lt;/title&gt;
+        &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
+        &lt;/head&gt;
+        &lt;body class="title" id="title"&gt;
+        &lt;h3 class="titleText"&gt;One Flew Over the Cuckoo's Nest centers on themes of order vs. freedom.&lt;/h3&gt;
+        &lt;br&gt;
+        &lt;h3 class="titleText"&gt;Spend your day bringing orders to the mental hospital as a new nurse by&lt;/h3&gt;
+        &lt;br&gt;
+        &lt;h3 class="titleText"&gt; completing tasks around the hospital in this point-and-click game.&lt;/h3&gt;
+        &lt;br&gt;
+        &lt;h3 class="titleText"&gt; Use the "head back to main room" button in the top left corner to go back.&lt;/h3&gt;
+        &lt;br&gt;
+        &lt;br&gt;
+        &lt;br&gt;
+        &lt;h3 class="titleText"&gt;Click anywhere to continue.&lt;/h3&gt;
+        &lt;script src="transition.js"&gt;&lt;/script&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+    <h4>Outside</h4>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;title&gt;English Project&lt;/title&gt;
+        &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
+        &lt;/head&gt;
+        &lt;body class="outside" id="outside"&gt;
+        &lt;h3 class="outsideText"&gt;Click anywhere to enter the hospital&lt;/h3&gt;
+        &lt;script src="transition.js"&gt;&lt;/script&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+    <h4>Main Room</h4>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;title&gt;English Project&lt;/title&gt;
+        &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
+        &lt;/head&gt;
+        &lt;body class="mainRoom"&gt;
+        &lt;button onclick="window.location.href='pills.html'" class="pillButton"&gt;Give out Pills&lt;/button&gt;
+        &lt;button onclick="window.location.href='lobotomy.html'" class="lobotomyButton"&gt;Perform Lobotomy&lt;/button&gt;
+        &lt;button onclick="window.location.href='therapy.html'" class="therapyButton"&gt;Have Group Therapy&lt;/button&gt;
+        &lt;button onclick="window.location.href='code.html'" class="codeButton"&gt;Look at Code&lt;/button&gt;
+        &lt;script src="transition.js"&gt;&lt;/script&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+    <h4>Lobotomy Room</h4>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;title&gt;English Project&lt;/title&gt;
+        &lt;style&gt;
+        img {
+            user-select: none;
+        }
+        &lt;/style&gt;
+        &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
+        &lt;/head&gt;
+        &lt;body class="lobotomyRoom" onload="openPopup1()"&gt;
+        &lt;div id="myPopup" class="popup"&gt;
+        &lt;div class="popup-content"&gt;
+        &lt;span onclick="closePopup1()" style="float: right; cursor: pointer;"&gt;&times;&lt;/span&gt;
+        &lt;p&gt;Follow the instructions to learn how to perform the lobotomy.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+        &lt;h3 id="instruction" style="text-align: center; font-size: x-large;"&gt;Drag and drop the hand and needle onto the head of the guy to insert the needle&lt;/h3&gt;
+        &lt;h3 id="newText" style="text-align: center; font-size: x-large; display: none;"&gt;Now click twice to move the needle around&lt;/h3&gt;
+        &lt;div style="display: flex; justify-content: center;"&gt;
+        &lt;img id="myImage" src="images/lob1.1.png" draggable="true" ondragstart="drag(event)" style="display: block; margin: auto;"&gt;
+        &lt;img id="myImage2" src="images/lob1.2.png" ondrop="drop(event)" ondragover="allowDrop(event)" style="display: block; margin: auto;"&gt;
+        &lt;h3 id="congratsText" style="display: none; font-size: xx-large;"&gt;Congratulations! You have completed a lobotomy.&lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;p id="congratsText" style="text-align: center; font-size: x-large; display: none;"&gt;Congratulations! You have completed a lobotomy.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;button onclick="window.location.href='mainRoom.html'" class="backButton"&gt;Head Back to the Main Room&lt;/button&gt;
+        &lt;script src="lobotomy.js"&gt;&lt;/script&gt;
+        &lt;script src="transition.js"&gt;&lt;/script&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+    <h4>Pill Room</h4>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;title&gt;English Project&lt;/title&gt;
+        &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
+        &lt;/head&gt;
+        &lt;body class="pillRoom" onload="openPopup1()"&gt;
+        &lt;div id="myPopup" class="popup"&gt;
+        &lt;div class="popup-content"&gt;
+        &lt;span onclick="closePopup1()" style="float: right; cursor: pointer;"&gt;&times;&lt;/span&gt;
+        &lt;p&gt;Match the pills to the following people by clicking the pill first than the hand.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="hand-container" id="hand1"&gt;
+        &lt;a&gt;&lt;img src="images/hand.png" class="hand" id="handImg1" style="left: 10%;"&gt;&lt;/a&gt;
+        &lt;h2 class="handText" style="left: 10%;"&gt;Randle McMurphy&lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;div class="pill-container" id="pill1"&gt;
+        &lt;a&gt;&lt;img src="images/bluePill.png" class="pills" id="pillImg1" style="left: 50%;"&gt;&lt;/a&gt;
+        &lt;/div>
+        &lt;div class="hand-container" id="hand2">
+        &lt;a&gt;&lt;img src="images/hand.png" class="hand" id="handImg2" style="left: 30%;">&lt;/a&gt;
+        &lt;h2 class="handText" style="left: 30%;"&gt;Chief Bromden&lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;div class="pill-container" id="pill2"&gt;
+        &lt;a&gt;&lt;img src="images/redAndbluePill.png" class="pills" id="pillImg2" style="left: 70&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="hand-container" id="hand3"&gt;
+        &lt;a>&lt;img src="images/hand.png" class="hand" id="handImg3" style="left: 50%;"&gt;&lt;/a&gt;
+        &lt;h2 class="handText" style="left: 50%;"&gt;Billy Bibbit&lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;div class="pill-container" id="pill3"&gt;
+        &lt;a&gt;&lt;img src="images/greenPill.png" class="pills" id="pillImg3" style="left: 30%;">&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="hand-container" id="hand4"&gt;
+        &lt;a&lt;img src="images/hand.png" class="hand" id="handImg4" style="left: 70%;">&lt;/a&gt;
+        &lt;h2 class="handText" style="left: 70%;"&gt;Charles Cheswick&lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;div class="pill-container" id="pill4"&gt;
+        &lt;a&gt;&lt;img src="images/pinkAndbluePill.png" class="pills" id="pillImg4" style="left: 10%;">&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;button onclick="window.location.href='mainRoom.html'"class="backButton"&gt;Head Back to the Main Room&lt;/button&gt;
+        &lt;script src="transition.js"&gt;&lt;/script&gt;
+        &lt;script src="pillGame.js"&gt;&lt;/script&gt;
+        &lt;script&gt;
+        function openPopup1(popupId) {
+            document.getElementById("myPopup").style.display = "block";
+        }
+        
+        function closePopup1(popupId) {
+            document.getElementById("myPopup").style.display = "none";
+        }
+        &lt;/script&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+    <h4>Therapy Room</h4>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;title&gt;English Project&lt;/title&gt;
+        &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
+        &lt;/head&gt;
+        &lt;body class="therapyRoom" onload="openPopup1()"&gt;
+        &lt;div id="myPopup" class="popup"&gt;
+        &lt;div class="popup-content"&gt;
+        &lt;span onclick="closePopup1()" style="float: right; cursor: pointer;"&gt;&amp;times;&lt;/span&gt;
+        &lt;p&gt;Click the silhouettes of the patients to learn why they are here.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div onclick="openPopup('mcmurphy')"&gt;
+        &lt;a&gt;&lt;img class="character" src="images/person1.png" style="position: absolute; left: 25%;"&gt;&lt;/a&gt;
+        &lt;h3 style="left: 25%;" class="characterName"&gt;Randle McMurphy&lt;/h3&gt;
+        &lt;/div&gt;    
+        &lt;div id="mcmurphyPopup" class="popup"&gt;
+        &lt;div class="popup-content"&gt;
+        &lt;span onclick="closePopup('mcmurphy')" style="float:right; cursor:pointer;"&gt;&amp;times;&lt;/span&gt;
+        &lt;p&gt;Randle McMurphy - I'm in here because I got into fights on a farm, and now the courts have labeled me a psychopath.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div onclick="openPopup('bromden')"&gt;
+        &lt;a&gt;&lt;img class="character" src="images/person2.png" style="position: absolute; left: 40%;"&gt;&lt;/a&gt;
+        &lt;h3 style="left: 40%;" class="characterName"&gt;Chief Bromden&lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div id="bromdenPopup" class="popup"&gt;
+        &lt;div class="popup-content"&gt;
+        &lt;span onclick="closePopup('bromden')" style="float:right; cursor:pointer;"&gt;&amp;times;&lt;/span&gt;
+        &lt;p&gt;Chief Bromden - I'm in here because I suffer from schizophrenia. I fell into a descent of clinical depression and started hallucinating.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div onclick="openPopup('billy')"&gt;
+        &lt;a&gt;&lt;img class="character" src="images/person3.png" style="position: absolute; left: 60%;"&gt;&lt;/a&gt;
+        &lt;h3 style="left: 60%;" class="characterName"&gt;Billy Bibbit&lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div id="billyPopup" class="popup"&gt;
+        &lt;div class="popup-content"&gt;
+        &lt;span onclick="closePopup('billy')" style="float:right; cursor:pointer;"&gt;&amp;times;&lt;/span&gt;
+        &lt;p&gt;Billy Bibbit - I'm in here because I can't handle the outside world. My life is completely dominated by my mother.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div onclick="openPopup('harding')"&gt;
+        &lt;a&gt;&lt;img class="character" src="images/person4.png" style="position: absolute; left: 80%;"&gt;&lt;/a&gt;
+        &lt;h3 style="left: 80%;" class="characterName"&gt;Dale Harding&lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div id="hardingPopup" class="popup"&gt;
+        &lt;div class="popup-content"&gt;
+        &lt;span onclick="closePopup('harding')" style="float:right; cursor:pointer;"&gt;&amp;times;&lt;/span&gt;
+        &lt;p&gt;Dale Harding - I'm in here because I'm having marital problems. She says I cannot embody a traditionally masculine man.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;script&gt;
+        function openPopup1(popupId) {
+            document.getElementById("myPopup").style.display = "block";
+        }
+
+        function closePopup1(popupId) {
+            document.getElementById("myPopup").style.display = "none";
+        }
+
+        function openPopup(popupId) {
+            document.getElementById(popupId + "Popup").style.display = "block";
+        }
+
+        function closePopup(popupId) {
+            document.getElementById(popupId + "Popup").style.display = "none";
+        }
+        &lt;/script&gt;
+        &lt;button onclick="window.location.href='mainRoom.html'" class="backButton"&gt;Head Back to the Main Room&lt;/button&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+    <h4>Style.css</h4>
+    <pre>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    height: 100vh; 
+    overflow: hidden;
+}
+
+.backButton {
+    border-radius: 10px;
+    left: 1%;
+    top: 5%;
+    position: fixed;
+}
+
+.popup {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4); 
+  }
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    font-size: x-large;
+  }
+
+/* Title  Page */
+.title {
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.titleText {
+    color: rgb(255, 255, 255);
+    font-size: xx-large;
+}
+/* Title  Page */
+
+
+
+/* Outside  Page */
+.outside {
+    background-image: url('images/outside.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.outsideText {
+    color: rgb(255, 255, 255);
+    font-size: xx-large;
+    position: absolute;
+    top: 5%;
+}
+/* Outside  Page */
+
+
+
+/* Main Room Page */
+.mainRoom {
+    background-image: url('images/mainRoom.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.pillButton {
+    border-radius: 10px;
+    left: 53%;
+    position: fixed;
+    
+}
+
+.lobotomyButton {
+    border-radius: 10px;
+    left: 28%;
+    position: fixed;
+}
+
+.therapyButton {
+    border-radius: 10px;
+    left: 60%;
+    position: fixed;
+}
+
+.codeButton {
+    border-radius: 10px;
+    left: 20%;
+    position: fixed;
+}
+
+/* Main Room Page */
+
+
+
+/* Pill Room Page */
+
+.pillRoom {
+    background-image: url('images/pillHandout.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.hand {
+    width: 250px;
+    position: absolute;
+    top: 0;
+  }
+
+.pills {
+    width: 50px;
+    position: absolute;
+    top: 80%;
+}
+
+.handText {
+    position: absolute;
+    top: 0;
+    color: rgb(0, 0, 0);
+}
+
+/* Pill Room Page */
+
+
+
+/* Therapy Room Page */
+
+.therapyRoom {
+    background-image: url('images/therapy.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+.characterName {
+    position: absolute;
+    top: 40%;
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+}
+
+.character {
+    position: absolute;
+    top: 50%;
+    width: 100px;
+
+}
+
+/* Therapy Room Page */
+
+
+
+/* Lobotomy Room Page */
+
+.lobotomyRoom {
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+/* Lobotomy Room Page */
+    </pre>
+    <h4>Lobotomy JS</h4>
+    <pre>
+        let clickCount = 0;
+    let isCombined = false;
+    let dragTimer;
+
+    function openPopup1() {
+        document.getElementById("myPopup").style.display = "block";
+    }
+
+    function closePopup1() {
+        document.getElementById("myPopup").style.display = "none";
+    }
+
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        if (data === "myImage") {
+            var image = document.getElementById(data);
+            var target = ev.target;
+            if (target.id === "myImage2") {
+                target.src = "images/lob2.png";
+                image.style.display = 'none';
+                document.getElementById('instruction').style.display = 'none';
+                document.getElementById('myImage2').setAttribute('id', 'lob2');
+                document.getElementById('newText').style.display = 'block';
+                isCombined = true;
+            }
+        }
+    }
+
+    function uncombine() {
+        document.getElementById('newText').style.display = 'none';
+        document.getElementById('congratsText').style.display = 'block';
+        document.getElementById('lob4').style.display = 'none';
+        document.getElementById('myImage').style.display = 'none';
+        document.getElementById('myImage2').style.display = 'none';
+        clickCount = 0;
+        isCombined = false;
+    }
+
+    document.addEventListener('click', function (event) {
+        if (isCombined && event.target.id === 'lob2') {
+            clickCount++;
+            if (clickCount === 1) {
+                event.target.src = "images/lob3.png";
+            } else if (clickCount === 2) {
+                event.target.src = "images/lob4.png";
+                event.target.setAttribute('id', 'lob4');
+                document.getElementById('newText').innerText = "Great! Now drag the image to remove the needle";
+                document.getElementById('instruction').style.display = 'none';
+                document.getElementById('newText').style.display = 'block';
+            } else if (clickCount === 3) {
+                uncombine();
+                document.getElementById('congratsText').innerText = "Congratulations! You have completed a lobotomy.";
+            } else {
+                alert("You can only click the image thrice!");
+            }
+        }
+    });
+
+    document.addEventListener('dragstart', function (event) {
+        if (event.target.id === 'lob4') {
+            dragTimer = setTimeout(function() {
+                uncombine();
+                document.getElementById('congratsText').innerText = "Congratulations! You have completed a lobotomy.";
+            }, 500); 
+        }
+    });
+
+    document.addEventListener('dragend', function (event) {
+        clearTimeout(dragTimer); 
+    });
+    </pre>
+    <h4>Pill Game JS</h4>
+    <pre>
+        document.addEventListener("DOMContentLoaded", function() {
+            let pairs = [
+                {hand: "hand1", pill: "pill1"},
+                {hand: "hand2", pill: "pill2"},
+                {hand: "hand3", pill: "pill3"},
+                {hand: "hand4", pill: "pill4"}
+            ];
+        
+            let clickedElements = [];
+        
+            pairs.forEach(pair => {
+                const hand = document.getElementById(pair.hand);
+                const pill = document.getElementById(pair.pill);
+        
+                hand.addEventListener("click", function() {
+                    handleClick(hand);
+                });
+        
+                pill.addEventListener("click", function() {
+                    handleClick(pill);
+                });
+            });
+        
+            function handleClick(element) {
+                if (!clickedElements.includes(element)) {
+                    clickedElements.push(element);
+                    element.style.display = "none";
+                } else {
+                    clickedElements = clickedElements.filter(item => item !== element);
+                    element.style.display = "block";
+                }
+        
+                if (clickedElements.length === 2) {
+                    setTimeout(resetClickedElements, 1000);
+                }
+            }
+        
+            function resetClickedElements() {
+                if (clickedElements[0].id.slice(-1) === clickedElements[1].id.slice(-1)) {
+                    pairs = pairs.filter(pair => pair.hand !== clickedElements[0].id && pair.pill !== clickedElements[1].id);
+                    
+                } else {
+                    clickedElements.forEach(element => {
+                        element.style.display = "block";
+                    });
+                }
+                clickedElements = [];
+            }
+        });
+    </pre>
+    <h4>Transitions JS</h4>
+    <pre>
+        document.body.addEventListener('click', function() {
+            document.querySelector('.outside').style.opacity = 0;
+            setTimeout(function() {
+                window.location.href = 'mainRoom.html'; 
+            }, 500); 
+        });
+        
+        document.body.addEventListener('click', function() {
+            document.querySelector('.title').style.opacity = 0;
+            setTimeout(function() {
+                window.location.href = 'outside.html'; 
+            }, 500); 
+        });
+    </pre>
+    <script src="transition.js"></script>
+    <button onclick="window.location.href='mainRoom.html'" class="backButton">Head Back to the Main Room</button>
+</body>
+</html>
