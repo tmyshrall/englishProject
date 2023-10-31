@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>English Project</title>
+    <style>
+        img {
+            user-select: none;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="lobotomyRoom" onload="openPopup1()">
+    <div id="myPopup" class="popup">
+        <div class="popup-content">
+            <span onclick="closePopup1()" style="float: right; cursor: pointer;">&times;</span> 
+            <p>Follow the instructions to learn how to perform the lobotomy.</p> 
+        </div>
+    </div>
+    <div>
+        <h3 id="instruction" style="text-align: center; font-size: x-large; padding-top: 20%;">Drag and drop the hand and needle onto the head of the guy to insert the needle</h3>
+        <h3 id="newText" style="text-align: center; font-size: x-large; display: none;">Now click twice to move the needle around</h3>
+        <div style="display: flex; justify-content: center;">
+            <img id="myImage" src="images/lob1.1.png" draggable="true" ondragstart="drag(event)" style="display: block; margin: auto; margin-top: 70px;"> 
+            <img id="myImage2" src="images/lob1.2.png" ondrop="drop(event)" ondragover="allowDrop(event)" style="display: block; margin: auto; margin-top: -70px;"> 
+            <h3 id="congratsText" style="display: none; font-size: xx-large;">Congratulations! You have completed a lobotomy.</h3>
+        </div>
+        <p id="congratsText" style="text-align: center; font-size: x-large; display: none;">Congratulations! You have completed a lobotomy.</p>
+    </div>
+    <button onclick="window.location.href='mainRoom.html'" class="backButton">Head Back to the Main Room</button>
+    <script src="lobotomy.js"></script>
+    <script src="transition.js"></script>
+</body>
+</html>
