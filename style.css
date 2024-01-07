@@ -19,7 +19,7 @@ body {
     left: 20%;
     transform: translate(-50%, -50%) rotate(-73deg);
     white-space: nowrap;
-    font-size: x-large;
+    font-size: large;
     cursor: pointer;
 }
 
@@ -29,7 +29,7 @@ body {
     left: 12%;
     transform: translate(-50%, -50%) rotate(-65deg);
     white-space: nowrap;
-    font-size: x-large;
+    font-size: large;
     cursor: pointer;
 }
 
